@@ -9,6 +9,7 @@ namespace NinjectInterceptorSample.Logic
 {
     public class SomeClass
     {
+        [Transaction]
         [Log]
         public virtual void SomeMethod()
         {

@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="InterceptorAttributes\LogAttribute.cs" />
+    <Compile Include="InterceptorAttributes\TransactionAttribute.cs" />
     <Compile Include="Interceptors\LogInterceptor.cs" />
     <Compile Include="Interceptors\TransactionInterceptor.cs" />
     <Compile Include="Logic\SomeClass.cs" />

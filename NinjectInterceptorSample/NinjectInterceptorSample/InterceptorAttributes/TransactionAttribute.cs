@@ -6,11 +6,11 @@ using NinjectInterceptorSample.Interceptors;
 
 namespace NinjectInterceptorSample.InterceptorAttributes
 {
-    public class LogAttribute : InterceptAttribute
+    public class TransactionAttribute : InterceptAttribute
     {
         public override IInterceptor CreateInterceptor(IProxyRequest request)
         {
-            return request.Context.Kernel.Get<LogInterceptor>();
+            return request.Context.Kernel.Get<TransactionInterceptor>();
         }
     }
 }
